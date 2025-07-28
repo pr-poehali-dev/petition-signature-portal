@@ -70,12 +70,12 @@ const Index = () => {
             <span className="text-primary">в Екатеринбург</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Поддержите Машу в её стремлении переехать в один из самых динамичных городов России. 
-            Каждая подпись приближает её к мечте!
+            Присоединяйтесь к петиции за переезд Маши в Екатеринбург. 
+            Ваша поддержка имеет значение!
           </p>
           
           {/* Статистика */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-2xl mx-auto">
             <Card className="hover-scale">
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-center space-x-2">
@@ -86,19 +86,6 @@ const Index = () => {
               <CardContent>
                 <div className="text-3xl font-bold text-primary mb-1">{stats.total}</div>
                 <div className="text-sm text-gray-500">из {stats.goal} подписей</div>
-              </CardContent>
-            </Card>
-
-            <Card className="hover-scale">
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-center space-x-2">
-                  <Icon name="Calendar" size={24} className="text-primary" />
-                  <h3 className="font-semibold text-gray-900">Сегодня</h3>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="text-3xl font-bold text-primary mb-1">{stats.today}</div>
-                <div className="text-sm text-gray-500">новых подписей</div>
               </CardContent>
             </Card>
 
